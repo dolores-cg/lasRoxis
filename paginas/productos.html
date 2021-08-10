@@ -7,7 +7,21 @@
     <meta name="description" content="Los productos que ofrecen las Roxis son muebles de madera modernos, sumandole diseño y sustentabilidad a tus espacios">
     <meta name="keywords"  content="maceteros, barra desmontable, sillón ecológico"> 
     
-    
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -17,114 +31,125 @@
 
 </head>
 <body>
-    <!--inicio Menu-->
-    <nav class="menuPrincipal">
-        <ul class="menuPrincipal__lista">
-            <li class="menuPrincipal__item">
-                <a href="..\index.html">
-                    Inicio
-                </a>
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\quienesSomos.html">
-                    Quienes somos
-                </a> 
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\productos.html">
-                    Productos
-                </a> 
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\servicios.html">
-                    Servicios
-                </a>
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\contacto.html">
-                    Contacto
-                </a> 
-            </li>
-        </ul>
-    </nav>
-    <!--fin Menu-->
+    <!--inicio contenedor padre-->
+        <div class="contenedor">
+            <!--inicio Menu-->
+                <header>
+                <div>
+                    <img src="..\contenido\logo.jpg" alt="logo las roxis">
+                </div>
 
-    <h2 class="tituloPrincipal">PRODUCTOS </h2>
-
-    <section>
-                <!--inicio grid productos-->
-        <div class="grid">
-            <div>Producto</div>
-            <div>Medidas</div>
-            <div>Comentarios</div>
-            <div>Imagen de referencia</div>
-            <div>Macetero</div>
-            <div>
-                <li>18 macetas: largo total 120cm, alto total 100cm</li>
-                <li>12 macetas: largo total 120cm, alto total 80cm</li>
-                <li>9 macetas: largo total 60cm, alto total 100cm</li>
-            </div>
-            <div>
-                <li>Elemento para el aire libre</li>
-                <li>Se entrega curado con aceite, ya recuperado en su totalidad</li>
-                <li>Realizado en madera recuperada de saligna y/o pino</li>
-                <li>Clavado y encolado</li>
-            </div>
-            <div><img src="..\contenido\macetero2.jpg" alt="" class="grid__fit"></div>
-            <div>
-                Mesa de arrime
-            </div>
-            <div>  
-                <li>Frente 100cm</li>
-                <li>Ancho 45cm</li>
-                <li>Altura 82cm</li>
-            </div>
-            <div>
-                <li>Elemento para el aire libre o para interior</li>
-                <li>Terminación natural</li>
-                <li>Realizado en madera recuperada de saligna y/o pino</li>
-                <li>Clavado y encolado</li>
-            </div>
-            <div><img src="..\contenido\mesaDeArrime.jpg" alt="" class="grid__fit"></div>
-            <div>
-                Barra de balcón desmontable
-            </div>
-            <div>
-                <li>Largo 100cm</li>
-                <li>Ancho 35cm</li>
-                <li>Espesor 2cm</li>
-            </div>
+                <nav>
+                    <a href="..\index.html">Inicio</a>
+                    <a href="..\paginas\quienesSomos.html">Quienes somos</a> 
+                    <a href="..\paginas\productos.html">Productos</a> 
+                    <a href="..\paginas\servicios.html">Servicios</a>
+                    <a href="..\paginas\contacto.html">Contacto</a> 
+                </nav>
+                </header>  
+            <!--fin Menu-->
+            
+            <div class="titulo"><h2 class="titulo__principal">PRODUCTOS </h2></div>
+            
+            <!--inicio display productos-->
+            <section class="galeria">
+                                         
+                <div class="contenedorImagen">
                 
-            <div>
-                <li>Elemento para el aire libre</li>
-                <li>Se entrega con 2 manos de cetol</li>
-                <li>Realizado en madera recuperada de saligna y/o pino</li>
-                <li>Clavado y encolado</li>
-            </div>
-            <div><img src="..\contenido\barraDesmontable.jpg" alt="" class="grid__fit"></div>
-        </div>
-        <!--fin grid productos-->
-        
-    </section>
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img1.jpg" alt="macetero">
+                        </div>
+                        <div class="info">
+                            <h3>Maceteros</h3>
+                        </div>
+                    </div>
+                
+                                   
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img2.jpg" alt="sillon">
+                        </div>
+                        <div class="info">
+                            <h3>Sillones</h3>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img3.jpg" alt="fanal">
+                        </div>
+                        <div class="info">
+                            <h3>Fanales</h3>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img4.jpg" alt="monturero">
+                        </div>
+                        <div class="info">
+                            <h3>Montureros</h3>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img5.jpg" alt="huertero">
+                        </div>
+                        <div class="info">
+                            <h3>Huerteros</h3>
+                        </div>
+                    </div>  
+                
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img6.jpg" alt="banqueta alta">
+                        </div>
+                        <div class="info">
+                            <h3>Banquetas</h3>
+                        </div>
+                    </div> 
+                
+                    <div class="box">
+                        <div class="imagen">
+                            <img src="..\contenido\img7.jpg" alt="mesa ratona">
+                        </div>
+                        <div class="info">
+                            <h3>Mesas</h3>
+                        </div>
+                    </div> 
+                                
+                </div>
+                
+                </section>
+            <!--fin display productos-->
 
-    <!--WhatsApp-->
-    <div class="whatsApp">
-        <div>
-            <img src="..\contenido\whatsapp.png" alt="icono whatsapp">
-        </div>
-        
+            <!--WhatsApp-->
+                <div class="whatsApp">
+    <div>
+        <a class="btn btn-primary btn-lg btn-floating" style="background-color: #25d366; font-size: 20px;" href="https://wa.link/i7gg38" role="button" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
-    <!--fin WhatsApp--> 
+    
+                </div>
+            <!--fin WhatsApp-->
 
-    <!--inicio footer-->
-    <footer class="footer">
-        <ul class="footer__lista">
-                <div class="footer__item">Contacto</div>
-                <div class="footer__item">Redes sociales</div>
-                <div class="footer__item">Newsletter</div>
+            <!--inicio footer-->
+                <footer>
+                    <nav>
+                        <a href="..\paginas\contacto.html">Contacto</a>
+                        <a href="https://www.instagram.com/lasroxis/" role="button" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>                                
+                        <a href="https://www.facebook.com/lasroxismuebles" role="button" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </nav>     
+                </footer>
+            <!--fin footer-->
         </div>
-    </footer>
-    <!--fin footer-->
-
+    <!--fin contenedor padre-->
 </body>
 </html>

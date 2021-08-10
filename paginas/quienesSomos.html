@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="La historia de Las Roxis y cómo está conformado su equipo">
     <meta name="keywords"  content="ecomuebles, confort, practicidad"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+    rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -15,63 +32,93 @@
     <title>Quienes somos - Las Roxis</title>
 </head>
 <body>
-    <!--inicio Menu-->
-    <nav class="menuPrincipal">
-        <ul class="menuPrincipal__lista">
-            <li class="menuPrincipal__item">
-                <a href="..\index.html">
-                    Inicio
-                </a>
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\quienesSomos.html">
-                    Quienes somos
-                </a> 
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\productos.html">
-                    Productos
-                </a> 
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\servicios.html">
-                    Servicios
-                </a>
-            </li>
-            <li class="menuPrincipal__item">
-                <a href="..\paginas\contacto.html">
-                    Contacto
-                </a> 
-            </li>
-        </ul>
-    </nav>
-    <!--fin Menu-->
-    
-    <h2 class="tituloPrincipal">QUIENES SOMOS</h2>
+    <!--inicio contenedor padre-->
+        <div class="contenedor"> 
+            <!--inicio Menu-->
+                <header>
+                <div>
+                    <img src="..\contenido\logo.jpg" alt="logo las roxis">
+                </div>
 
-    <h3 class="tituloSecundario">Originalidad y estilo en tus diseños</h3>
-    <p>Hola! Somos Mariano y César, dos apasionados de la carpintería y desde hace tiempo realizamos pequeños muebles de madera recuperada y "con huella" para decorar nuestros hogares. Además, frente a pedidos de amigos, hemos elaborado algunos también para ellos.</p>
-    <p>A partir de esta experiencia surgió la idea de proyectarnos en el área comercial. Para ello tuvimos que desarrollar una marca que nos identificara. Así surgió el nombre "Las Roxis", en reconocimiento a tres importantes mujeres de nuestras vidas.</p>
-    <p>Gracias por compartir nuestra historia, y esperamos ser parte de sus opciones al momento de regalar o regalarse objetos con huella.</p>
-    
-    <!--WhatsApp-->
-    <div class="whatsApp">
-        <div>
-            <img src="..\contenido\whatsapp.png" alt="icono whatsapp">
-        </div>
-        
-    </div>
-    <!--fin WhatsApp-->
+                <nav>
+                    <a href="..\index.html">Inicio</a>
+                    <a href="..\paginas\quienesSomos.html">Quienes somos</a> 
+                    <a href="..\paginas\productos.html">Productos</a> 
+                    <a href="..\paginas\servicios.html">Servicios</a>
+                    <a href="..\paginas\contacto.html">Contacto</a> 
+                </nav>
+                </header>  
+            <!--fin Menu-->
+            
+            <div class="titulo">
+                <h2 class="titulo__principal">QUIENES SOMOS</h2>
+                <h3 class="titulo__secundario">Originalidad y estilo en tus diseños</h3>
+            </div>
 
-    <!--inicio footer-->
-    <footer class="footer">
-        <ul class="footer__lista">
-                <div class="footer__item">Contacto</div>
-                <div class="footer__item">Redes sociales</div>
-                <div class="footer__item">Newsletter</div>
+            <!--inicio seccion del medio-->
+            <section class="main" data-aos="fade-up">
+                <article>
+                    <p> 
+                        Hola! Somos Mariano y César, dos apasionados de la carpintería y 
+                        desde hace tiempo realizamos pequeños muebles de madera recuperada y
+                        "con huella" para decorar nuestros hogares. Además, frente a pedidos
+                        de amigos, hemos elaborado algunos también para ellos.
+                    </p>
+                    <p> 
+                        A partir de esta experiencia surgió la idea de proyectarnos en el área
+                        comercial. Para ello tuvimos que desarrollar una marca que nos identificara.
+                        Así surgió el nombre "Las Roxis", en reconocimiento a tres importantes
+                        mujeres de nuestras vidas.
+                    </p>
+                    <p> 
+                        Gracias por compartir nuestra historia, y esperamos ser parte de sus opciones
+                        al momento de regalar o regalarse objetos con huella.
+                    </p>
+            
+            
+                </article>
+            </section>
+         <!--fin seccion del medio-->
+
+        <!--inicio aside-->
+            <aside data-aos="fade-up">
+                <div class="widget">
+                    <img src="..\contenido\exterior.jpg" alt="muebles de exterior">
+                </div>
+
+            </aside>
+        <!--fin aside-->
+            
+            <!--WhatsApp-->
+                <div class="whatsApp">
+            <div>
+                <a class="btn btn-primary btn-lg btn-floating" style="background-color: #25d366; font-size: 20px;" href="https://wa.link/i7gg38" role="button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+                </div>
+            <!--fin WhatsApp-->
+
+            <!--inicio footer-->
+                <footer>
+                <nav>
+                    <a href="..\paginas\contacto.html">Contacto</a>
+                    <a href="https://www.instagram.com/lasroxis/" role="button" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>                                
+                    <a href="https://www.facebook.com/lasroxismuebles" role="button" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </nav>     
+                </footer>
+            <!--fin footer-->
         </div>
-    </footer>
-    <!--fin footer-->
-    
+    <!--fin contenedor padre-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
